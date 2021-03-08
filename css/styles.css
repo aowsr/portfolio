@@ -3,11 +3,11 @@ body {
 }
 
 header {
+  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: auto;
   display: flex;
   align-items: center;
 }
@@ -18,21 +18,41 @@ header * {
 
 header li {
   margin: 20px;
+  transition: font-size 0.1s, color 1s;
+  transition-timing-function: ease;
 }
 
 header li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  animation: text ease 3s;
+}
+header li:hover {
+  font-size: 30px;
+  color: rgb(180, 180, 180);
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 header img {
   height: 80px;
   padding: 1 1 1;
   margin: 1 auto;
-  transition: height 0.2s;
-  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation: logo ease-in 0.5s;
 }
 
-header img:hover {
-  height: 100px;
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
