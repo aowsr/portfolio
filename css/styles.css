@@ -1,0 +1,38 @@
+body {
+  background-color: #222222;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+header img {
+  height: 80px;
+  padding: 1 1 1;
+  margin: 1 auto;
+  transition: height 0.2s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+header img:hover {
+  height: 100px;
+}
