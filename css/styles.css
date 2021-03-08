@@ -1,5 +1,7 @@
 body {
   background-color: #222222;
+  color: rgb(255, 255, 255);
+  margin: 0;
 }
 
 header {
@@ -43,8 +45,8 @@ header li:hover {
 
 header img {
   height: 80px;
-  padding: 1 1 1;
-  margin: 1 auto;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 1px 1px 1px;
   animation: logo ease-in 0.5s;
 }
 
@@ -55,4 +57,53 @@ header img {
   100% {
     opacity: 1;
   }
+}
+
+/* body */
+
+section {
+  display: block;
+  margin: 10vh 0 10vh 0;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  margin: 1rem;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: avatar ease-out 0.5s;
+}
+
+@keyframes avatar {
+  0% {
+    opacity: 0;
+    height: 350px;
+    width: 350px;
+  }
+  100% {
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #222222),
+    url("https://i.pinimg.com/originals/bb/98/55/bb9855e4ce31410e9289453ddb447ceb.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  color: white;
 }
