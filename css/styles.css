@@ -121,7 +121,7 @@ header img {
   border: 1px solid rgba(0, 0, 0, 0.18);
 }
 .work_item img {
-  max-width: 500px;
+  max-width: 100%;
 }
 .work_item button {
   border: none;
