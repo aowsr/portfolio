@@ -4,8 +4,10 @@ body {
   margin: 0;
 }
 
-header {
-  height: 100px;
+nav {
+  height: 10vh;
+
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,61 +16,29 @@ header {
   align-items: center;
   z-index: 10;
 }
-.nav_btn {
-  position: fixed;
-  right: 0;
-}
 
-.nav_list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-header * {
+nav * {
   display: inline;
+  z-index: 2;
 }
 
-header li {
-  margin: 20px;
+nav li {
   transition: font-size 0.1s, color 1s;
   transition-timing-function: ease;
 }
 
-header li a {
+nav li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   animation: text ease 3s;
 }
-header li:hover {
-  font-size: 30px;
-  color: rgb(180, 180, 180);
+nav li a:hover {
+  color: rgb(4, 0, 255);
 }
 
-@keyframes text {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-header img {
-  height: 80px;
-  padding: 1px 1px 1px 1px;
-  margin: 1px 1px 1px 1px;
-  animation: logo ease-in 0.5s;
-}
-
-@keyframes logo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.nav_btn {
+  position: fixed;
+  right: 0;
 }
 .nav_background {
   background-color: #222222;
@@ -89,6 +59,38 @@ header img {
   text-transform: uppercase;
   display: block;
   width: 100%;
+}
+
+.nav_list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header img {
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  animation: logo ease-in 0.5s;
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* body */
@@ -141,8 +143,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
