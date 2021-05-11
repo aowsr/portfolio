@@ -12,10 +12,18 @@ header {
   right: 0;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
-nav {
+.nav_btn {
   position: fixed;
   right: 0;
+}
+
+.nav_list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 header * {
@@ -64,19 +72,21 @@ header img {
 }
 .nav_background {
   background-color: #222222;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -100;
-  text-align: center;
+  height: 100vh;
+  width: 99.9vw;
+  z-index: 1;
 }
 
-.nav ul li {
-  font-size: 50px;
+.nav_list ul li {
+  font-size: 80px;
+  color: #b8b8b8;
+  text-decoration: none;
+  text-transform: uppercase;
   display: block;
   width: 100%;
 }
@@ -115,11 +125,7 @@ section {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), #222222),
     url("https://i.pinimg.com/originals/bb/98/55/bb9855e4ce31410e9289453ddb447ceb.jpg");
-
-  /* Set a specific height */
   height: 100%;
-
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,7 +145,6 @@ section {
   height: 80px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  z-index: 1000;
 }
 .menu-btn__burger {
   width: 50px;
