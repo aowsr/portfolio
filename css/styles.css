@@ -146,13 +146,15 @@ nav li a:hover {
 
 .avatar {
   background-color: rgba(77, 77, 77, 0.377);
-  width: 15%;
-  max-width: 20vw;
+  width: 100%;
+  max-width: 15vw;
   min-width: 200px;
-  height: auto;
+  max-height: 15vw;
+  min-height: 200px;
   margin: 20px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid rgba(44, 44, 44, 0.377);
+  box-shadow: 0px 3px 10px 0px rgb(0, 0, 0);
   animation: avatar ease-out 0.5s;
 }
 
@@ -255,6 +257,16 @@ h5 {
 .hidden {
   display: none;
 }
+.br {
+  margin: 20px;
+  width: 3px;
+  height: 300px;
+  background: #fff;
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+  .br {
+    width: 400px;
+    height: 2px;
+  }
 }
