@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
 body {
   background-color: #222222;
   color: rgb(255, 255, 255);
   margin: 0;
+  font-family: "Rubik", sans-serif;
 }
 .logo {
   max-width: 100px;
@@ -266,7 +269,7 @@ h5 {
 
 @media only screen and (max-width: 700px) {
   .br {
-    width: 400px;
-    height: 2px;
+    width: 500px;
+    height: 1px;
   }
 }
